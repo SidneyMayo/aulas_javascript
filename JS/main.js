@@ -42,6 +42,27 @@ function setReplace(frase, nome, novo_nome){
 } */
 
 function clicou(){
- document.getElementById("agradecimento").innerHTML = "Obrigado por clicar";
+ document.getElementById("agradecimento").innerHTML = "<b>Obrigado por clicar</b>";
  //console.log(document.getElementById("agradecimento"))
+}
+
+function redirecionar(){
+    window.open("https://github.com/SidneyMayo/aulas_javascript") //a função "window.open" abre o link em outra janela
+    //window.location.href="https://github.com/SidneyMayo/aulas_javascript" a função "window.location.href" abre o link na mesma página
+}
+
+function trocar(elemento){
+    elemento.innerHTML = "boooa";
+    //document.getElementById("mouse").innerHTML = "Tu é o cara";
+    //alert("boooa");
+}
+function voltar(elemento){
+   // document.getElementById("mouse").innerHTML = "Passe o mouse aqui!";
+    elemento.innerHTML = "Passe o mouse aqui!";
+}
+function load(){
+    alert("página carregada!")
+}
+function funcaoChange(elemento){
+    console.log(elemento.value)
 }
